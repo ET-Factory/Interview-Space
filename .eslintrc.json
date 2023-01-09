@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["react", "@typescript-eslint", "jest", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["jest.*.js"],
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"],
+
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "object-curly-newline": "off",
+    "linebreak-style": 0,
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  }
+}
