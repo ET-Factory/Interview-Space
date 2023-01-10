@@ -24,6 +24,17 @@
     "object-curly-newline": "off",
     "linebreak-style": 0,
     "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "import/prefer-default-export": "off",
+    "react/button-has-type": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.stories.*", "**/.storybook/**/*.*"],
+        "peerDependencies": true
+      }
+    ],
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
